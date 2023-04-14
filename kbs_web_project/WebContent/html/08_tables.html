@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML tables</title>
+	<!-- Internal Style -->
+	<style>
+		table, th, td{
+			border-collapse:collapse;
+			border:0.5px solid blue;  
+			/* 두께 종류 색깔 */
+			
+		}
+		th, td{
+			font-size:12px;
+			
+			padding-top:0px;
+			padding-right:0px;
+			padding-bottom:0px;
+			padding-left:0px;
+			
+			padding:0px;
+			padding:0px 0px;
+			padding:10px 14px 10px 14px; 
+			/* 시계 방향으로 패딩 적용 / 하나만 쓰면 전체 적용 / 두개만 쓰면 top,bottom, left,right 적용*/
+		}
+		tr:nth-child(even) {
+			/* 짝수만 선택하겠다는 표현 */
+  			background-color: #D6EEEE;
+		}
+	
+	</style>
+</head>
+<body>
+	<h1>주소록</h1>
+	<table>
+		<tr> <!-- 행만 구별 -->
+			<!-- <th>번호</th> -->
+			<th colspan=2>번호/성명</th> 
+			<!-- 컬럼(가로) 2칸을 쓰겠다는 속성 -->
+			<th>연락처</th>
+			<th>주소</th>
+		</tr>
+		<tr>
+			<td rowspan=2>1</td>
+			<!-- 로우(세로) 2칸을 쓰겠다는 속성 -->
+			<td>홍길동</td>
+			<td>010-1351-6521</td>
+			<td>서울</td>
+		</tr>
+		<tr>
+			<!-- <td>2</td> -->
+			<td>홍길동</td>
+			<td>010-1351-6521</td>
+			<td>서울</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>홍길동</td>
+			<td>010-1351-6521</td>
+			<td>서울</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
