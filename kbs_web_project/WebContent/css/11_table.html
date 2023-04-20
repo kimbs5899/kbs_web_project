@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Table</title>
+	<style>
+		* {
+			font-family: "나눔고딕", sans-serif;
+		}
+		table {
+			width:70%;, height:400p;
+			
+		}
+		table, th, td {
+			padding:10px;
+			border:1px solid lightgray;
+			border-collapse:collapse;
+			font-size:14px;
+			text-align:center;
+		}
+		tr:nth-child(1) th {
+			background:#3e94ec;
+		}
+		
+		tr:last-child td:first-child {
+			background:white;
+			border-color:white;
+			border-top:lightgray;
+			text-align:center;
+		}
+		td:nth-child(2) {
+			text-align:left;
+			text-indent:20px;
+		}
+		tr:nth-child(odd) {
+			background:#f4f4f4;
+		}
+		tr:hover {
+			background:#3e94ec;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>공지사항</h1>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>조회수</th>
+			<th>등록날짜</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+
+			<td>3</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+
+			<td>3</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>[공지]CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td colspan="4"><< 1 2 3 4 >></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Links</title>
+	
+	<style>
+	@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+ .nanumgothic * {
+ 			font-family: 'Nanum Gothic', sans-serif;
+			}
+		* {
+			font-family: "Nanum Gothic";
+			font-weight:bold;
+		}
+		div {
+			border:1px solid red;
+			display:inline-block;
+			margin:10px;
+			padding:10px 30px;
+			width:100px;
+			text-align:center;
+		}
+		div:hover {
+			background:yellow;
+			cursor:pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Links</h1>
+	<hr>
+	<div onclick="naver()">네이버</div>
+	<div onclick="google()">구글</div>
+	<div onclick="apple()">애플</div>
+	
+	<script>
+		function naver() {
+			location.href = "http://www.naver.com";	
+		}
+		function google() {
+			location.href = "http://www.google.com";	
+		}
+		function apple() {
+			location.href = "http://www.apple.com";	
+		}
+	</script>
+	
+</body>
+</html>
