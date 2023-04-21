@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Display2</title>
+	<style>
+		div0 {
+			max-width:800px;
+			margin:0 16px;
+		}
+		#div1 {
+			width:30%;
+			border:1px solid #ccc;
+			display:inline-block;
+			text-align:center;
+			padding: 0 8px;
+			margin:0 5px;
+		}
+		#div2 {
+			width:30%;
+			border:1px solid #ccc;
+			display:inline-block;
+			text-align:center;
+			padding: 0 8px;
+			margin:0 5px;
+		}
+		#div3 {
+			width:30%;
+			border:1px solid #ccc;
+			display:inline-block;
+			text-align:center;
+			padding: 0 8px;
+			margin:0 5px;
+		}
+		img {
+			width:100%;
+		}
+		p {
+			text-align:center;
+			padding-right: 4px;
+			padding-left: 4px;
+			margin:20px 0;
+		}
+		.text {
+			color:crimson;
+			background-color: rgba(222,222,222,0.3);
+		}
+		button {
+			background-color: #04AA6D;
+			color: #fff;
+			padding:10px 18px;
+			border-radius:5px;
+			border:none;
+			width:100%;
+			margin-top:20px;
+			margin-bottom:20px;
+		}
+		button:hover {
+			cursor:pointer;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Display : block, inline, inline-block</h1>
+	<div>Div1</div>
+	<span>Span1</span>
+	<div class="div0">
+		<div id="div1">
+			<p>
+			<code class="text">display:none</code>
+			</p>
+			<img src="img_5terre.jpg" width="100%">
+			<button type="button" onclick="btn_check('remove')">Remove</button>
+		</div>
+		<div id="div2">
+			<p>
+			<code class="text">visibility:hidden</code></p>
+			<img src="img_forest.jpg" width="100%">
+			<button type="button" onclick="btn_check('hide')">Hide</button>
+		</div>
+		<div id="div3">
+			<p>
+			<code>Reset</code>
+			</p>
+			<img src="img_lights.jpg" width="100%">
+			<button type="button" onclick="btn_check('reset')">Reset All</button>
+		</div>
+	</div>
+	<script>
+		function btn_check(bName) {
+			if(bName == 'remove') {
+				var d1 = document.getElementById("div1");
+				d1.style.display = 'none';
+			}else if(bName == 'hide') {
+				var d2 = document.getElementById("div2");
+				d2.style.visibility = "hidden";
+			}else if(bName == 'reset') {
+				var d1 = document.getElementById("div1");
+				var d2 = document.getElementById("div2");
+				d1.style.display = "inline-block";
+				d2.style.visibility = "visible";
+			}
+		}
+	</script>	
+	
+	
+	
+	
+</body>
+</html>
