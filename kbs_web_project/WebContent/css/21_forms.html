@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Forms</title>
+	<style>
+		li {
+			text-align:center;
+		}
+		li:first-child, li:last-child {
+			margin-top:20px;
+		}
+		ul {
+		border:1px solid red;
+			list-style-type:none;
+			padding:0px;
+			margin:0px;
+			width:500px;
+		}
+		label {
+			border:1px solid tomato;
+			display:inline-block;
+			width:70px;
+			padding:3px 5px 3px 10px;
+			margin:2px;
+			font-size : 14px;
+			font-family: "나눔 고딕", sans-serif;
+			background:tomato;
+			color:#fff;
+			border-radius:20px;
+		}
+		input {
+			width:50%;
+			border:1px solid lightgray;
+			padding:3px 5px 3px 10px;
+			border-radius:20px;
+			outline:none;
+		}
+		button {
+			width:25%;
+			display:inline-block;
+			padding:10px 20px;
+			background:linear-gradient(79deg, #682CAD 0%, #2FC0CC 100%) 0% 0% no-repeat padding-box;
+			font-family:"나눔 고딕", sans-serif;
+			color:#fff;
+			font-size:14px;
+			border: 0px solid #fff;
+			cursor:pointer;
+			margin-bottom:20px;
+		}
+		button:hover {
+			opacity:0.5;
+			background:#481780;
+		}
+		input:focus {
+			border:1px solid tomato;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form action="#" name="loginForm" method="get">
+		<ul>
+			<li>
+				<label>ID</label>
+				<input type="text" name="ID">
+			</li>
+			<li>
+				<label>Password</label>
+				<input type="password" name="pass">
+			</li>
+			<li>
+				<button type="button">Login</button>
+				<button type="reset">Cancel</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

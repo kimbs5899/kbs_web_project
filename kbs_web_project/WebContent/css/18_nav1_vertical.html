@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Navigation</title>
+	<style>
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			display:block;
+			height:800px;
+			width:200px;
+			background:#ccc;
+			float:left;
+		}
+		li {
+			width:100%;
+			font-family:"나눔 고딕", sans-serif;
+		}
+		ul > li:first-child > a {
+			background:green;
+			cursor:pointer;
+			color:white;
+			
+		}
+		ul li > a {
+			text-decoration-line:none;
+			color:#000;
+			display:block;
+			padding:8px 15px;
+		}
+		ul > li > a:hover:not(.active) {
+			background:#555;
+			color:#fff;
+		}
+		body > div {
+			background:tomato;
+			height:400px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Vertical</h1>
+	<ul>
+		<li><a href="#" class ="active">home</a></li>
+		<li><a href="#">news</a></li>
+		<li><a href="#">contact</a></li>
+		<li><a href="#">about</a></li>
+	</ul>
+	<div> <!-- content -->
+		<p>Vertical menu - Home</p>
+	</div>
+</body>
+</html>

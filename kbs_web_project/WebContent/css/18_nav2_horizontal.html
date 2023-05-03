@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Horizontal</title>
+	<style>
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			overflow: hidden;
+			background:#4a4a4a;
+		}
+		li {
+			float:left;
+		}
+		li > a {
+			display:block;
+			padding:20px 20px;
+			text-decoration-line:none;
+			color:#fff;
+			font-family:"나눔 고딕", sans-serif;
+		}
+		li:first-child > a {
+			background:green;
+		}
+		li > a:hover:not(.active) {
+			background:red;
+		}
+		li:last-child {
+			float:right;
+		}
+			
+	</style>
+</head>
+<body>
+	<h1>Horizontal</h1>
+	<ul>
+		<li><a href="#" class ="active">home</a></li>
+		<li><a href="#">news</a></li>
+		<li><a href="#">contact</a></li>
+		<li><a href="#" class ="last">about</a></li>
+	</ul>
+</body>
+</html>
